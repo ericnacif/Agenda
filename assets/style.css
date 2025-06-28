@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #f3f3f3;
+  color: #333;
+}
+
+h1, h2 {
+  color: #155724;
+}
+
+a {
+  color: #155724;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, a.button-link {
+  background-color: #155724;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 6px;
+}
+
+button:hover, a.button-link:hover {
+  background-color: #0b3d0b;
+}
+
+a.button-link {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.success-message {
+  color: #155724;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-bottom: 30px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #155724;
+  color: white;
+}
+
+tr:hover {
+  background-color: #e8f5e9;
+}
+
+form label {
+  font-weight: bold;
+  color: #155724;
+  display: block;
+  margin-top: 15px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+form textarea {
+  min-height: 80px;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+  }
+
+  td {
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-weight: bold;
+    color: #155724;
+  }
+}
